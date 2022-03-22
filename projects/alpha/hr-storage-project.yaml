@@ -1,0 +1,16 @@
+stage: alpha
+subdirectory: hr
+
+datasets:
+  - dataset_name: hr-dataset
+    tables:
+      - table_name: table1
+        accesses:
+          - role: roles/bigquery.dataOwner
+            members: ["group:hr-superuser@ecorp.com","user:john.smith@gmail.com"]
+      - table_name: table2
+        accesses:
+          - role: roles/bigquery.dataViewer
+            members: ["user:john.smith@gmail.com","user:jane.doe@gmail.com"]
+          - role: roles/bigquery.dataOwner
+            members: ["serviceAccount:my-other-app@appspot.gserviceaccount.com"]
