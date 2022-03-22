@@ -1,0 +1,49 @@
+{
+    "tables":{
+        "table1": [
+            {
+              "name": "name",
+              "type": "STRING",
+              "mode": "NULLABLE",
+              "description": "Employee Name"
+            },
+            {
+              "name": "location",
+              "type": "STRING",
+              "mode": "NULLABLE",
+              "description": "Employee Location"
+            },
+            {
+              "name": "salary",
+              "type": "STRING",
+              "mode": "REQUIRED",
+              "description": "Employee Salary",
+              "policyTags": {
+                  "names": ["projects/my-policy-project/locations/us/taxonomies/99689138976506373/policyTags/5646421765429655491"]
+              }
+            }
+          ],
+          "table2": [
+            {
+              "mode": "NULLABLE",
+              "name": "user_name",
+              "type": "STRING"
+            },
+            {
+              "mode": "NULLABLE",
+              "name": "first_name",
+              "type": "STRING"
+            },
+            {
+              "mode": "NULLABLE",
+              "name": "last_name",
+              "type": "STRING"
+            },
+            {
+              "mode": "NULLABLE",
+              "name": "country",
+              "type": "STRING"
+            }
+        ]
+    }
+}
